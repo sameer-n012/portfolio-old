@@ -55,7 +55,7 @@ const Header = ({ title }) => {
 									LinkedIn
 								</NavDropdown.Item>
 								<NavDropdown.Item
-									mailto={profileDetails.email}
+									href={`mailto:${profileDetails.email}`}
 									target='_blank'
 									rel='noopener noreferrer'
 									disabled={!profileDetails.email}

@@ -15,6 +15,7 @@ const Footer = () => {
 					href={profileDetails.githubLink}
 					target='_blank'
 					rel='noopener noreferrer'
+					disabled={!profileDetails.githubLink}
 				>
 					<FaGithub />
 				</a>
@@ -23,21 +24,23 @@ const Footer = () => {
 					href={profileDetails.linkedinLink}
 					target='_blank'
 					rel='noopener noreferrer'
+					disabled={!profileDetails.linkedinLink}
 				>
 					<FaLinkedin />
 				</a>
 				<a
 					className='footer-social-icon m=0 ms-2 not-link cursor-clickable'
-					mailto={profileDetails.email}
+					href={`mailto:${profileDetails.email}`}
 					target='_blank'
 					rel='noopener noreferrer'
+					disabled={!profileDetails.email}
 				>
 					<FaEnvelope />
 				</a>
 				<p className='m-0 ms-2'>|</p>
 				<a
 					className='m=0 ms-2 not-link cursor-clickable'
-					href='https://github.com/sameer-n012/portfolio'
+					href='https://github.com/sameer-n012/sameer-n012'
 					target='_blank'
 					rel='noopener noreferrer'
 				>
