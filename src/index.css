@@ -1,13 +1,75 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+* {
+	font-family: 'Asap', sans-serif;
+	font-weight: 400;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+	margin: 0;
+	height: 100%;
+	overflow-x: hidden;
+	background-color: dimgray;
+}
+
+.header {
+}
+
+.footer {
+}
+
+.footer-social-icon {
+	font-size: 1.5rem;
+	display: flex;
+}
+
+.App {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+
+.featured-carousel-img {
+	object-fit: cover;
+	margin: auto;
+	height: 25rem;
+	width: 50rem;
+}
+
+.carousel-caption {
+	top: 0;
+	bottom: auto;
+	right: auto;
+	text-align: start;
+}
+
+.not-link,
+.not-link:hover,
+.not-link:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+.cursor-clickable {
+	cursor: pointer;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
 }
