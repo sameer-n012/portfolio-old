@@ -7,10 +7,12 @@ import profileDetails from '../resources/myProfile';
 const Header = ({ title }) => {
 	return (
 		<Container className='header m-0 p-0 w-100 mw-100 d-flex flex-row text-align-center'>
+			<p className='test1 test2'>a</p>
+			<p className='test1'>b</p>
 			<Navbar className='w-100 p-4' bg='dark' variant='dark' expand='sm'>
 				<Container className='d-flex justify-content-spread'>
 					<LinkContainer to='/'>
-						<Navbar.Brand>Sameer Narendran</Navbar.Brand>
+						<Navbar.Brand>{title}</Navbar.Brand>
 					</LinkContainer>
 
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -21,6 +23,9 @@ const Header = ({ title }) => {
 						<Nav className='me-auto'>
 							<LinkContainer to='/projects'>
 								<Nav.Link>Projects</Nav.Link>
+							</LinkContainer>
+							<LinkContainer to='/blogs'>
+								<Nav.Link>Blog</Nav.Link>
 							</LinkContainer>
 							<LinkContainer to='/about'>
 								<Nav.Link>About Me</Nav.Link>

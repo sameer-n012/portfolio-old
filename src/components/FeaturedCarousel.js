@@ -5,26 +5,30 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { FaAngleRight } from 'react-icons/fa';
 
 const FeaturedCarousel = ({ featuredProjects }) => {
-	console.log('featured', featuredProjects);
 	return (
 		<Container className=''>
 			<Carousel>
 				{featuredProjects.map((project) => (
 					<Carousel.Item key={project._id}>
 						<img
-							className='featured-carousel-img d-block'
-							src={`images/${
+							className={`featured-carousel-img d-block ${
+								project.featuredImgTextDark
+									? 'bg-light'
+									: 'bg-dark'
+							}`}
+							src={require(`../images/${
 								project.images[0]
 									? project.images[0]
 									: 'defaultImage.png'
-							}`}
+							}`)}
 							alt={project.name}
 						/>
-						<Carousel.Caption>
+						<div className='featured-carousel-caption-background'></div>
+						<Carousel.Caption className='text-light'>
 							<h3>{project.name}</h3>
 							<LinkContainer
 								className='cursor-clickable'
-								to={`/projects/${project._id}`}
+								to={`/project/${project._id}`}
 							>
 								<p>
 									See More <FaAngleRight />

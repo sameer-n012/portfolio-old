@@ -21,7 +21,44 @@ body,
 	background-color: dimgray;
 }
 
+.not-link,
+.not-link:hover,
+.not-link:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+.cursor-clickable {
+	cursor: pointer;
+}
+
+.border-black-2 {
+	border: 2px solid black;
+}
+
+.border-white-2 {
+	border: 2px solid white;
+}
+
+.overflow-text {
+	text-overflow: ellipsis;
+	overflow-y: visible;
+	overflow-x: clip;
+	white-space: nowrap;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.small-text-center {
+	text-align: center;
+	color: white;
+}
+
 .header {
+	border-bottom: 2px solid white;
 }
 
 .footer {
@@ -51,6 +88,16 @@ body,
 	width: 50rem;
 }
 
+.featured-carousel-caption-background {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 6.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(38, 38, 38, 0.7);
+}
+
 .carousel-caption {
 	top: 0;
 	bottom: auto;
@@ -58,18 +105,96 @@ body,
 	text-align: start;
 }
 
-.not-link,
-.not-link:hover,
-.not-link:visited {
-	text-decoration: none;
-	color: inherit;
+.project {
+	width: 18rem;
+	height: 20rem;
 }
 
-.cursor-clickable {
-	cursor: pointer;
+.project:hover {
+	opacity: 0.7;
+	transform: scale(1.05);
 }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
+.project-image {
+	width: 17.8rem;
+	height: 12rem;
+	object-fit: cover;
+}
+
+.link-disabled {
+	pointer-events: none;
+	cursor: default;
+	color: lightgray !important;
+}
+
+.project-card-tag {
+	background-color: lightgray;
+	border-radius: 1rem;
+	border: 1px solid black;
+	color: black;
+	padding: 0.25rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	margin-right: 0.25rem;
+}
+
+.project-card-tag:hover {
+	background-color: darkgray;
+	border-radius: 1rem;
+	border: 1px solid black;
+	color: black;
+	padding: 0.25rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	margin-right: 0.25rem;
+}
+
+.btn {
+	width: 6rem;
+}
+
+.overlay-btn {
+	margin: 1rem;
+	position: fixed;
+	background-color: white;
+}
+
+.gallery-image {
+	height: 12rem;
+	width: 20rem;
+	object-fit: cover;
+}
+
+.gallery-image:hover {
+	opacity: 0.5;
+}
+
+.img-me {
+	width: 80%;
+	border-radius: 8px;
+}
+
+.blog-container {
+	text-overflow: ellipsis;
+	overflow: clip;
+	overflow-wrap: break-word;
+	height: 12rem;
+	padding: 2rem;
+	border-radius: 2rem;
+}
+
+.blog-body-text a {
+	color: white;
+}
+
+.blog-body-text a:hover {
+	color: gray;
+}
+
+.blog-body-text p {
+	text-indent: 3rem;
+}
+
+.blog-body-text img:hover {
+	opacity: 0.7;
 }

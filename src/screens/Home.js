@@ -1,23 +1,29 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import ErrorText from '../components/ErrorText';
 import FeaturedCarousel from '../components/FeaturedCarousel';
-import projects from '../resources/projects';
+import { getAllProjects } from '../resources/projects';
 
 const Home = () => {
-	console.log(projects);
+	const projects = getAllProjects();
 	return (
 		<>
-			<Header title='Portfolio' />
 			<Container className='main'>
-				<FeaturedCarousel
-					featuredProjects={projects.filter(
-						(project) => project.featured
-					)}
-				/>
+				{projects && projects.length === 0 ? (
+					<ErrorText
+						text={'Sorry, there are no projects here.'}
+						showButton={true}
+					/>
+				) : !projects ? (
+					<ErrorText showButton={true} />
+				) : (
+					<FeaturedCarousel
+						featuredProjects={projects.filter(
+							(project) => project.featured
+						)}
+					/>
+				)}
 			</Container>
-			<Footer />
 		</>
 	);
 };
