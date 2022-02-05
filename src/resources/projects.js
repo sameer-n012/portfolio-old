@@ -60,7 +60,7 @@ const projects = [
                     regression on the data using the ridge regularization technique and graphed our results
                     using the Python library Matplotlib. Overall, we achieved a low mean squared error and accurate
                     predictions.`,
-		githubRepoName: '',
+		githubRepoName: 'fish-weight-regression',
 		images: [
 			'fishmarket0.png',
 			'fishmarket1.png',
@@ -89,7 +89,7 @@ const projects = [
                     After testing different models, we decided to use ResNet152 V2 which appeared to have 
                     the highest accuracy and fine-tuned the model parameters to achieve better results on
                     the dataset. Overall, we achieved an accuracy of 77% on the test data.`,
-		githubRepoName: '',
+		githubRepoName: 'resnet-car-classification',
 		images: [
 			'resnetcars5.PNG',
 			'resnetcars3.png',
@@ -112,11 +112,11 @@ const projects = [
 	{
 		_id: 4,
 		name: 'Employee Management Application',
-		description: `A Java application that was made to manage employees in a company. Using this, 
+		description: `A Java application that was made with a partner to manage employees in a company. Using this, 
                     a company administrator can add and remove employees, add notes and wages, and schedule 
                     employees. Employees can sign in to see notes and add logs during their shift, 
                     which the administrator can verify.`,
-		githubRepoName: '',
+		githubRepoName: 'ema-asd',
 		images: ['ema0.PNG', 'ema1.PNG', 'ema2.PNG', 'ema3.PNG', 'ema4.PNG'],
 		tags: [
 			'java',

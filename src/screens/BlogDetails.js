@@ -83,6 +83,7 @@ const BlogDetails = () => {
 						>
 							<ReactMarkdown
 								disallowedElements={['h1', 'h2']}
+								linkTarget={'_blank'}
 								className='blog-body-text'
 							>
 								{blogBody ? blogBody : ''}
