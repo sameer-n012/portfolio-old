@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { useNavigate, useParams } from 'react-router-dom';
 import ErrorText from '../components/ErrorText';

@@ -22,13 +22,14 @@ To access the application, go to [http://localhost:3000](http://localhost:3000) 
 
 -   [Bootstrap 5](https://getbootstrap.com/)
 -   [ESLint](https://eslint.org/)
--   [Moment.js](https://momentjs.com/)
 -   [React](https://reactjs.org/)
 -   [React Bootstrap](https://react-bootstrap.github.io/)
 -   [React DOM](https://www.npmjs.com/package/react-dom)
 -   [React Icons](https://react-icons.github.io/react-icons/)
 -   [React Router DOM](https://www.npmjs.com/package/react-router-dom)
+-   [react-router-bootstrap](https://www.npmjs.com/package/react-router-bootstrap)
 -   [react-scripts](https://www.npmjs.com/package/react-scripts)
+-   [react-markdown](https://www.npmjs.com/package/react-markdown)
 
 </details>
 
