@@ -4,11 +4,11 @@ This project was made by [Sameer N.](https://github.com/sameer-n012) using Nodej
 
 ## Project Features
 
--   a
-
-## Planned Project Features
-
--   b
+-   Links to LinkedIn, GitHub, Email, and Resume
+-   About section
+-   Repository of projects with searching by tags
+-   Carousel of featured projects
+-   Repository of blogs with searching by tags
 
 ## Run Instructions
 
