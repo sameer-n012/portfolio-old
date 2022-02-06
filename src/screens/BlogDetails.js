@@ -16,17 +16,15 @@ const BlogDetails = () => {
 		navigate(`/blogs/${tag}`);
 	};
 
-	const fetchText = fetch(require(`../resources/blogs/${blog.filename}`))
+	const fetchText = fetch(require(`../blogs/${blog.filename}`))
 		.then((r) => r.text())
 		.then((text) => {
 			return text;
 		});
 
 	useEffect(() => {
-		console.log('a');
 		const getText = async () => {
 			const text = await fetchText;
-			console.log('b', text);
 			setBlogBody(text);
 		};
 

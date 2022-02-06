@@ -198,3 +198,7 @@ code {
 .blog-body-text img:hover {
 	opacity: 0.7;
 }
+
+.blog-body-text code {
+	margin-left: auto;
+}

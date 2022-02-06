@@ -5,9 +5,7 @@ const blogs = [
 		title: `A new blog post`,
 		date: 'February 5, 2022',
 		tags: ['first-post', '2022'],
-		featuredBody: `As I'm making this portfolio website, I'm still not really sure what I'm ever going to write
-        here. Although theres no shortage of things right now to write about, it feels counter to the
-        idea of this blog to write a paragraph merely`,
+		featuredBody: `Sample Text of blog`,
 	},
 ];
 
