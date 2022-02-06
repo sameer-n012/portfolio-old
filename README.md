@@ -33,6 +33,7 @@ To access the application, go to [http://localhost:3000](http://localhost:3000) 
 
 </details>
 
-## Image Attribution
+## Attribution
 
+-   [GitHub Pages Deployment](https://github.com/rafgraph/spa-github-pages)
 -   [FontAwesome Icons](https://fontawesome.com) ([License](https://fontawesome.com/license/free))
