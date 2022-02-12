@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './screens/Home.js';
 import About from './screens/About.js';
 import Project from './screens/Project.js';
@@ -14,10 +14,11 @@ import ImageViewer from './screens/ImageViewer.js';
 function App() {
 	return (
 		<div className='App bg-dark'>
-			<BrowserRouter>
+			<HashRouter>
 				<Header title={'Sameer Narendran'} />
 				<Routes>
 					<Route path='/' element={<Home />} exact />
+					<Route path='/portfolio' element={<Home />} exact />
 					<Route path='/home' element={<Home />} exact />
 					<Route path='/about' element={<About />} exact />
 					<Route path='/blogs' element={<Blog />} exact />
@@ -42,7 +43,7 @@ function App() {
 					<Route path='*' element={<NotFound />} exact />
 				</Routes>
 				<Footer />
-			</BrowserRouter>
+			</HashRouter>
 		</div>
 	);
 }

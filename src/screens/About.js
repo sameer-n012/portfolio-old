@@ -23,7 +23,7 @@ const About = () => {
 			{!profileDetails ? (
 				<ErrorText showButton={true} />
 			) : (
-				<Container className='m-2 text-light d-flex'>
+				<Container className='m-2 text-light d-flex mt-5'>
 					<Col
 						className='text-light w-50 d-flex flex-column justify-content-center'
 						style={{ lineHeight: '2.5' }}
