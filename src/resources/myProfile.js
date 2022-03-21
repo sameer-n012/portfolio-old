@@ -1,6 +1,7 @@
 const profileDetails = {
 	email: 'snarendran@wisc.edu',
-	resumeLink: '',
+	resumeLink:
+		'https://drive.google.com/file/d/1DAvo7yurIF6XlGv5TtwE01F_2SnpUQnF/view',
 	githubLink: 'https://github.com/sameer-n012',
 	linkedinLink: 'https://www.linkedin.com/in/sameer-narendran-84825318a',
 	aboutMeDescription: `I'm Sameer Narendran, a first-year student at the University of Wisconsin Madison

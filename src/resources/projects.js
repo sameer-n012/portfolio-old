@@ -32,9 +32,9 @@ const projects = [
 		githubRepoName: 'food-review',
 		images: [
 			'foodreview0.jpg',
-			'foodreview1.PNG',
+			//'foodreview1.PNG',
 			'foodreview2.PNG',
-			'foodreview3.PNG',
+			//'foodreview3.PNG',
 			'foodreview4.PNG',
 			'foodreview5.PNG',
 			'foodreview6.PNG',
